@@ -16,12 +16,10 @@ local change_fov_value = function(value)
 		time = 2.5,
 	})
 
-	if not Util:is_in_state("ingame_waiting_for_respawn") then
-		return
-	end
-
 	local state = game_state_machine:current_state()
-	state._camera_object:set_fov(new_fov)
+	if state._camera_object then
+		state._camera_object:set_fov(new_fov)
+	end
 end
 
 module:hook("OnKeyPressed", "increase_fov", "mouse wheel down", "GAME", "PRESSED", function()

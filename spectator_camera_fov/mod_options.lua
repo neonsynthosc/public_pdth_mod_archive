@@ -7,6 +7,10 @@ local update_spectator_fov = function(_, value)
 	end
 
 	local state = game_state_machine:current_state()
+	if not state._camera_object then
+		return
+	end
+
 	state._camera_object:set_fov(math.floor(value))
 end
 

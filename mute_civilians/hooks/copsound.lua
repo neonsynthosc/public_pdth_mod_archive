@@ -1,10 +1,10 @@
-local ids_bank_manager = "units/characters/bank_manager/bank_manager2"
-local ids_nurse = "units/characters/civilians/hospital_female_nurse2/hospital_female_nurse2"
+local bank_manager_path = "units/characters/bank_manager/bank_manager2"
+local nurse_path = "units/characters/civilians/hospital_female_nurse2/hospital_female_nurse2"
 
 -- list of civilians we want to be able to speak during stealth phase
 local whisper_list = {
-	[Idstring(ids_bank_manager):key()] = true,
-	[Idstring(ids_nurse):key()] = true,
+	[Idstring(bank_manager_path):key()] = true,
+	[Idstring(nurse_path):key()] = true,
 }
 
 local module = ... or D:module("mute_civilians")
