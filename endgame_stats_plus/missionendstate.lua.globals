@@ -1,0 +1,41 @@
+# internal functions
+set_pair
+
+# elements
+panel
+group_best_killer_title
+group_best_killer
+group_best_special_killer_title
+group_best_special_killer
+group_best_civilian_killer_title
+group_best_civilian_killer
+group_most_head_shots_title
+group_most_head_shots
+group_best_accuracy_title
+group_best_accuracy
+group_most_downs_title
+group_most_downs
+group_total_kills_title
+group_total_kills
+group_total_specials_kills_title
+group_total_specials_kills
+group_total_civilians_kills_title
+group_total_civilians_kills,
+group_total_head_shots_title
+group_total_head_shots
+group_hit_accuracy_title
+group_hit_accuracy
+group_total_downs_title
+group_total_downs
+group_stats_title
+
+# custom elements
+group_most_head_shots_title
+group_most_head_shots
+group_best_civilians_killer_title
+group_best_civilians_killer
+group_total_civilians_kills_title
+group_total_civilians_kills
+
+# custom vars
+_has_extra_stats
