@@ -1,7 +1,7 @@
 local module = DMod:new("_hud", {
 	name = "_hud",
 	author = "_atom",
-	version = "1.6.9",
+	version = "1.7.1",
 	dependencies = { "hud", "[drop_in_menu]", "[loadout_dropdowns]", "[holiday_special]" },
 	includes = {
 		{ "dev/base" },
@@ -39,11 +39,17 @@ module:hook_post_require("lib/units/equipment/doctor_bag/doctorbagbase", "hooks/
 module:hook_post_require("lib/managers/hudmanager", "hooks/name_labels")
 module:hook_post_require("lib/network/handlers/unitnetworkhandler", "hooks/name_labels")
 
+module:hook_post_require("lib/tweak_data/tweakdata", "hooks/peer_colors")
+
 module:hook_post_require("lib/managers/hudmanager", "hooks/control_panel")
 
 module:hook_post_require("lib/states/ingamewaitingforplayers", "hooks/loadout_dropdowns")
 module:hook_post_require("lib/managers/menu/menunodekitgui", "hooks/loadout_dropdowns")
 module:hook_post_require("lib/managers/menumanager", "hooks/loadout_dropdowns")
+
+module:hook_post_require("lib/setups/setup", "hooks/mask_selector")
+module:hook_post_require("lib/states/ingamewaitingforplayers", "hooks/mask_selector")
+module:hook_post_require("lib/managers/menumanager", "hooks/mask_selector")
 
 module:hook_post_require("lib/setups/setup", "classes/toolbox")
 module:hook_post_require("lib/setups/setup", "classes/updater")
